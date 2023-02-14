@@ -43,6 +43,7 @@ group :development, :test do
     gem 'simplecov'
     gem 'launchy'
     gem 'rspec-rails'
+    gem 'rubocop'
 end
 
 group :development do
