@@ -1,9 +1,13 @@
 <h2>Create a New User</h2>
 
 <%= form_with model: @user, local: true do |form| %>
-  <%= form.label :name %>
+  <%= form.label :name %><br>
   <%= form.text_field :name, required: true %><br>
-  <%= form.label :email %>
+  <%= form.label :email %><br>
   <%= form.text_field :email, required: true %><br>
+  <%= form.label :password %><br>
+  <%= form.text_field :password, required: true %><br>
+  <%= form.label :password_confirmation %><br>
+  <%= form.text_field :password_confirmation, required: true %><br>
   <%= form.submit "Create New User" %>
 <% end %>
